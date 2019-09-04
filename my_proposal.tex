@@ -1,0 +1,220 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\graphicspath{ {./Desktop/images} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{babel,blindtext}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{tikz-feynman} 
+\usetikzlibrary{shapes,arrows,positioning,automata,backgrounds,calc,er,patterns}
+\tikzfeynmanset{compat=1.0.0}
+
+
+
+\begin{document}
+
+\textbf {1.	Introduction}\\
+
+Elementary particles can be divided into two categories.Leptons,fundamen-
+tal particles which interact only through the electro-weak force and hadrons, composite particles which interact through the strong force. The latter group is again divided into baryons and mesons. All baryons can be described as states of three quarks and mesons as bound states of a quark and an antiquark .Quarks are fermions that interact through the exchange of gluons, the mediators of strong force.
+
+In the constituent quark model mesons are bound states of quark-antiquark  pairs [1].
+A conventional meson will have a quark and an anti-quark connected by gluons in the form of chain like structures called gluonic string in ground state. 
+However, the gluonic field may be in an excited state which leads to hybrid mesons. Detecting these hybrid mesons is difficult as they can have the same quantum numbers as regular   system except for the special case where their quantum numbers would be forbidden for fermion-antifermion pairs. 
+ The $J^{PC}$ quantum numbers of a quark-antiquark system with spin angular momentum S, and relative orbital angular momentum L are defined as $$ \vec{J} = \vec{L} +\vec{ S}, P =(-1) ^{L+1} and \  
+   C= (-1) ^{L+S} $$ where J is the vector sum of L and S, P is the parity and C is the charge conjugation.
+Hence each meson is characterized by unique set of $J^{PC}$ quantum numbers [2]. Allowed quantum number combinations for fermion-antifermion pairs are restricted  to be $0^{++}, 0^{-+}, 1^{++}, 1^{+-},2^{++}, ...$  and so on but combinations like  $0^{--},0^{+-},1^{-+},2^{+-} ,…$  are forbidden. 
+Mesons with $J^{PC}$ combinations belonging to the second list are exotic mesons, which are of particular interest in GlueX.\\
+
+\textbf{2. Previous Experiments and status of exotic meson $\pi_{1 } (1600)$  }\\
+
+E852 was an experiment run at Brookhaven National Lab in year 1995 [3]. 
+The experiment used $\pi^{-}$ beam with a momentum of 18 GeV/c in the lab frame.
+Out of 1.37 million triggers satisfying the trigger topology of 3 forward going charged tracks, a recoil charged track, and two neutrals about 70000 events were found consistent with the final states $p\pi^{+}\pi^{-}\pi^{-}\gamma\gamma$ $(\pi^{-}p->\eta^{'}\pi^{-}p,\eta^{'}->\pi^{+}\pi^{-}\eta, \eta->\gamma\gamma)$ after kinematic fitting. The $1^{-+}  P_{+}$  intensity as a function of $ \eta^{'}\pi^{-}  $ invariant  mass system shows a broad peak around 1.6 GeV (Fig 1(a)).
+
+In 1990, a similar experiment had shown signs of a resonance for the  $\eta^{'}\pi^{-}$ system (Fig 1(b)). The VES experiment at the Institute of High Energy Physics studied many different channels looking for hybrid states [4]. VES used $\pi^{-}$ beam energy range 28 to 43 GeV.
+
+The third and most recent experiment was performed at CERN [5]. Pilot run from experiment COMPASS used 190 GeV/c $\pi^{-}$ beam on a fixed lead target and the results showed a significant exotic signal in the three charged pion final states (Fig 1(c)).
+
+The remarkable resemblance of the peaks for three different experiments indicate a good possibility of a broad resonance. But further studies with new experiments are needed to confirm their existence. Theorists have predicted that the photon beam could produce more gluonic hybrid mesons than pion beam. The GlueX is the first experiment that uses a photon beam to search for the exotic mesons.\\
+
+\begin{figure}
+  \includegraphics[width=.9\linewidth]{./Desktop/images/experiments.png}
+  \caption{The $1^{-+} P_{+}$ intensities as a function of $\eta^{'}\pi$ invariant mass from the COMPASS [6] (Left), VES[7](middle), and E852[8] (Right) collaborations}
+  \label{fig:boat1}
+\end{figure}
+
+
+
+
+
+
+
+
+ 
+ \textbf {3. Hall-D Detector and the GlueX experiment}\\
+ 
+ The GlueX experiment at Jefferson Lab uses a linearly polarized photon beam incident on liquid hydrogen target producing final state with multiple neutral and charged particles. Since this analysis focuses on the reaction $$\gamma p->\eta^{'}\pi^{0}p$$ followed by the decays $$\eta^{'}->\pi^{+}\pi^{-}\eta, \eta->\gamma\gamma,\pi^{0}->\gamma\gamma$$
+The final state consists of 3 charged particles and 4 neutral particles, requiring a detector with good detection efficiency and close to 4$\pi$ acceptance. 
+The GlueX detector in Hall-D detector at Jefferson lab was specifically designed for this experiment. 
+The design of the detector was primarily driven by the large number of final state particles, produced from decays of heavy and possibly exotic mesons.
+
+\begin{figure}
+  \includegraphics[width=.9\linewidth]{./Desktop/images/Gluex.png}
+  \caption{The GlueX Detector and Subsystems}
+  \label{fig:boat1}
+\end{figure}
+
+Figure 2 represents the Glue-X detector system in Jefferson Lab. 
+The accelerator produces an electron beam of slightly less than 12 GeV which hits a thin diamond wafer producing Bremsstrahlung photons as well as linearly polarized photons via coherent Bremsstrahlung.
+ The energy of the final state electrons is measured in tagger detectors, thus measuring the photon energy on an event by event basis.
+ The photon beam passes through a 3mm diameter collimator located 75m downstream from the diamond radiator.
+ Between the collimator and the target lies a pair-spectrometer to measure the photon beam flux[9] and a high energy photon polarimeter to measure the degree of polarization of photon beam[10].
+  The beam is carefully aligned so that it hits the target: liquid $H_{2}$ contained in a 30 cm long container.
+   Immediately surrounding the target is the Start Counter (SC) which determines the primary interaction time with a timing resolution of better than 300 ps (picoseconds).
+    A 390 cm long electromagnetic barrel shaped calorimeter (BCAL) detects photon showers with energies ranging from 0.05 GeV to several GeV,11$^{\circ}$-126$^{\circ}$ in polar angle and 0$^{\circ}$-360$^{\circ}$ in azimuthal angle [11].
+     Charged particles are detected and their trajectories in the magnetic field are determined using the central straw-tube drift chamber (CDC) for polar angles 6$^{\circ}$-165$^{\circ}$[12]. For forward going particles with polar angles smaller than 6$^{\circ}$, a forward calorimeter (FCAL) and a set of forward drift chamber (FDC) are installed.
+  In addition, time of flight (TOF)  measures the flight time with timing resolution of about 90 ps. 
+The whole setup is embedded inside a super conducting solenoid producing large magnetic field (about 2T), essential for momentum and charge determination.\\
+
+\textbf{4.	Preliminary Analysis Results}\\
+
+
+
+
+
+
+
+Using  2017 data set of GlueX experiment, the detected photons are combined to reconstruct the decayed $ \pi^{0}$  (Fig 3(a)) and $\eta$ (Fig 3(b)).The $\eta$  is again combined with charged pions $\pi^{+} \pi^{-}$  to reconstruct a sharp $ \eta^{'}$  signal (near 1 GeV) (Fig 3(c)). Another peak near 1.3 GeV (possibly f1 (1285)) is also seen in the same plot which is not relevant to this analysis. A 2-D plot (Fig 3(d)) of invariant mass of $\pi^{+}\pi^{-} \eta \pi^{0}$ Vs invariant mass of $\pi^{+} \pi^{-} \eta$ shows events centered within 0.94 to 0.97 along the Y-axis indicating a narrow $\eta^{'}$ signal. A large number of events above 0.97 along Y-axis is something yet to be understood.
+
+\begin{figure}
+\centering
+\begin{subfigure}{.6\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./Desktop/images/pi0.png}
+  \caption{Fig 3(a): Invariant mass of two gammas decaying from $\pi^{0}$}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.6\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./Desktop/images/eta.png}
+  \caption{Fig 3(b): Invariant mass of two gammas decaying from $\eta$  }                                             
+ \label{fig:sub2}
+\end{subfigure}
+\begin{subfigure}{.6\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./Desktop/images/etap.png}
+  \caption{Fig 3(c): Invariant mass of $\pi^{+}\pi^{-}\eta$  }
+  \label{fig:sub3}
+\end{subfigure}%
+\begin{subfigure}{.6\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./Desktop/images/2D.png}
+  \caption{Fig 3(d): Invariant mass of $\pi^{+}\pi^{-}\eta\pi^{0}$ (X-axis)  Vs $ \pi^{+} \pi^{-}\eta$ (Y- Axis)}
+  \label{fig:sub3}
+\end{subfigure}
+\caption{Analysis Plots}
+\label{fig:test}
+\end{figure}
+For event selection, beam energy only in the coherent region (8 to 9 GeV) is considered. In addition, the energy registered by the calorimeter but not belonging to any of the final state particles (unused shower energy) are also cut off. Events are further filtered through kinematic fitting which varies the measured variables within their uncertainty to fulfill kinematic constraints on variables such as energy, momentum and vertex.  The events which satisfy more than 1\% on the confidence level during fitting are selected. Accidental subtraction in which events that are out of time by more than 2.004 ns (nano-seconds) measured by tagger and RF are also excluded.\\
+
+
+\begin{figure}[!tbp]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{./Desktop/images/1600pp.png}
+    \caption{Exotic}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{./Desktop/images/brpp.png}
+    \caption{Baryonic resonance}
+  \end{minipage}
+\end{figure}
+\textbf{5.	Future Work}\\
+
+A study of invariant mass spectrum of $\eta^{'}\pi^{0}$ might give an indication of a resonance in the form of a peak, however, to extract details like mass, width and quantum numbers of such a resonance, technique like partial wave analysis (PWA) is useful. A PWA is a technique which uses the angular distributions of the decay products to parameterize the amplitude of the spectrum. Kinematic variables of the decay products are used to extrapolate the properties of the intermediate states, thus providing information about the reaction mechanism.
+
+Assume X decays to $\eta^{'}$ and $\pi^{0}$   with three vector momenta $p_{\eta^{'} }$,$p_{\pi^{0}}$ and spins $S_{\eta^{' } },S_{\pi^{0}}$  in the lab frame. 
+Let J, M, S and L be the total angular momentum of X, projection of J along beam axis, spin of resonance X and relative angular momentum between $\eta^{'}$ and $\pi^{0}$ respectively.
+ If $\theta_{\eta^{'}}$ and $\phi_{\eta^{'}}$ are the polar and azimuthal angles of  $\eta^{'}$ in the rest frame of resonance X and $\lambda$ is the helicity in the rest frame, then the decay amplitude can be written as,
+ 
+                 $A(\theta_{\eta^{'}},\phi_{\eta^{'}}) = <\theta_{\eta^{'}} \phi_{\eta^{'}}\lambda_{\eta^{'}} \lambda_{\pi^{0}}|\widehat{T}| JM>$ ...(1)\\
+                 where $\widehat{T}$ is the transition operator between $|\theta_{\eta^{'}}\phi_{\eta^{'}}\lambda_{\eta^{'}}\lambda_{\pi^{0}}>$ and $| JM>$\\
+
+Inserting a complete set of bases, \\
+$I=\sum_{J,L,M,S}^ {}|J,L,M,S>$ $<J,L,M,S|$ \\
+     
+     Equation (1) becomes\\
+$A(\theta_{\eta^{'}},\phi_{\eta^{'}}) = \sum_{J,L,M,S} {} <\theta_{\eta^{'}}\phi_{\eta^{'}}\lambda_{\eta^{'}}\lambda_{\pi^{0}} | JLMS> <JLMS | \widehat{T}|JM>$...(2) \\
+
+     The first part of the right hand side can be re-written as,\\
+     $<\theta_{\eta^{'}}\phi_{\eta^{'}}\lambda_{\eta^{'}}\lambda_{\pi^{0}} |JLMS> =<\theta_{\eta^{'}}\phi_{\eta^{'}}\lambda_{\eta^{'}}\lambda_{\pi^{0}} |JM\lambda_{\eta^{'}}\lambda_{\pi^{0}}> <JM\lambda_{\eta^{'}}\lambda_{\pi^{0}}|JLMS>$ ...(3)\\
+     
+     where $<\theta_{\eta^{'}}\phi_{\eta^{'}}\lambda_{\eta^{'}}\lambda_{\pi^{0}} |JM\lambda_{\eta^{'}}\lambda_{\pi^{0}}>$ is the rotation from arbitrary $\theta_{\eta^{'}},\phi_{\eta^{'}} $ to $ \theta_{\eta^{'}},\phi_{\eta^{'}} = 0$ along the beam direction (z-axis) which  is defined as, \\
+     
+     $<\theta_{\eta^{'}}\phi_{\eta^{'}}\lambda_{\eta^{'}}\lambda_{\pi^{0}} |JM\lambda_{\eta^{'}}\lambda_{\pi^{0}}> = \frac{\sqrt{2J+1}} {\sqrt4\pi} D_{M\lambda}^ {J*} (\theta_{\eta^{'}}, \phi_{\eta^{'}}, 0)$\\
+    
+     where  D($\alpha, \beta, \gamma$) is the Wigner D function [13].$ \gamma$ is an overall phase shift and is assumed 0 for simplicity.The second term of equation (2) is the change of basis from $|JM\lambda_{\eta^{'}}\lambda_{\pi^{0}}>$ to $|JLMS>$ defined as,\\
+     
+     $<JM\lambda_{\eta^{'}}\lambda_{\pi^{0}}|JLMS>$ =$ \frac{\sqrt{2J+1}} {\sqrt{2L+1}} (L0S\lambda|S\lambda) (S_{\eta^{'}} \lambda_{\eta^{'}} S_{\pi^{0}} - \lambda_{\pi^{0}}|S\lambda)$\\
+     
+     where $(L0S\lambda|S\lambda)$  and $(S_{\eta^{'}} \lambda_{\eta^{'}} S_{\pi^{0}} - \lambda_{\pi^{0}}|S\lambda)$ are the Clebsch-Gordan Coefficients. [14]
+     
+     The second part of the right hand side of  equation (2) $<JLMS | \widehat{T}|JM>$ contains the information about the decay and is known as the coupling constant , $a_{LS}$. Hence the decay amplitude is \\
+     
+     $A(\theta_{\eta^{'}},\phi_{\eta^{'}})$ = $\sum_{\lambda} {} {{\sqrt{2L+1}} D_{M\lambda}^ {J*} (\theta_{\eta^{'}}, \phi_{\eta^{'}}, 0)} (L0S\lambda|S\lambda) (S_{\eta^{'}} \lambda_{\eta^{'}} S_{\pi^{0}} - \lambda_{\pi^{0}}|S\lambda) a_{LS}$   .....(3)\\
+     
+     which is the expression for decay amplitude in terms of final measured variables. One of the future works would be to get the production amplitude by fitting the data.
+     
+ However, performing PWA requires that the  $\eta^{'}$ signal to be background free which is yet to be done in this analysis. Background subtraction can be done using sideband subtraction method or any other techniques. Moreover, the statistics will be increased by adding the GlueX dataset 2018. \\
+
+References:\\
+
+[1] Curtis A Meyer and Y Van Haarlem. Status of exotic-quantum-number mesons. Physical Review C, 82(2):025208, 2010.\\
+(https://arxiv.org/pdf/1004.5516.pdf)\\
+
+[2] GlueX Collaboration et al. Mapping the spectrum of light quark mesons and gluonic excitations with linearly polarized photons. Presentation to PAC,30,2006.\\
+
+[3] Observation of exotic meson production in the reaction $\pi^{-}p->\eta^{'}\pi^{-}p$ at 18GeV/c\\
+
+[4] Investigation of hybrid states in the VES experiment at the Institute for High Energy Physics (Protvino)
+(https://link.springer.com/article/10.1134/1.1891185)\\
+
+[5] New results on the search for spin-exotic mesons with COMPASS
+https://arxiv.org/pdf/1111.0259.pdf\\
+
+[6] A. Bressan, F. Kunne, T. Schluter, et al. (COMPASS collaboration), plb... 740, 303 (2015).\\
+
+[7]D. V. Amelin et al., Physics of Atomic Nuclei 68, 359 (2005).\\
+
+[8]E. I. Ivanov et al., Phys. Rev. Lett. 86, 3977 (2001).\\
+
+[9]Commissioning of the Pair Spectrometer of the GlueX experiment
+A Somov et al 2017 J. Phys.: Conf. Ser.798 012175\\
+
+[10]Design and construction of a high-energy photon polarimeter
+https://arxiv.org/pdf/1703.07875.pdf\\
+
+[11] Construction and Performance of the Barrel Electromagnetic Calorimeter for the GlueX Experiment\\
+https://arxiv.org/pdf/1801.03088.pdf\\
+
+[12] The GlueX Central Drift Chamber: Design and Performance\\
+https://arxiv.org/pdf/1004.3796.pdf\\
+
+[13] S. Chung. Spin formalisms. BNL, (76975-2006-IR), (2006).\\
+
+[14]H. Bichsel. Passage of particles through matter, (2006).\\
+\end{document}
+
+
+
+
+
+
+
+     
+     
+  
